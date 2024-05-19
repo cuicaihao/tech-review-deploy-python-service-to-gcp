@@ -1,0 +1,57 @@
+# # Ignore Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Ignore git and SVN directories
+.git
+.gitignore
+.svn
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore all markdown files
+*.md
+
+# Ignore all text files
+*.txt
+
+# Ignore all document files
+*.doc
+*.docx
+*.pdf
+
+# Ignore all data files
+*.csv
+*.json
+*.xml
+
+# Ignore all config files
+*.cfg
+*.ini
+*.yaml
+*.yml
+
+# Ignore virtual environment
+venv
+*.venv
+*.venv/
+venv/
+.venv/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
