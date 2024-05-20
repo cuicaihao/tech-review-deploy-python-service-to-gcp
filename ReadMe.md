@@ -1,34 +1,32 @@
 # Tech Review: How to Deploy Python Service to Google Cloud Platform 
 
-This repos is to show how to deploy a simple python flask web application to Google platform as services (App Engine, Cloud Run).
-
-The goal to the explore the following topics:
-
--  ✅ local python source code run.
--  ✅ local docker build and run.
--  ✅ deploy Flask App to App Engine with standard instance.
--  ✅ deploy Flask App to App Engine with flexible environment (docker).
--  ✅ deploy Flask App to Cloud Run from source.
--  ✅ deploy Flask App to Cloud Run by Built / Push / Deploy with Cloud Build.
+This repository demonstrates how to deploy a simple Python Flask web application to Google Cloud Platform services, including App Engine and Cloud Run.
 
 
-## Quick Start
+## Experiments Conducted:
 
-1. Create a local python environment at `.venv` with python 3.11 and `hello_app/requirements.txt`. 
-    - TIPS: If you use VS Code, press `Cmd+Shift+P`, search `Python: Create Environment...`, then follow the notifications.
-      - Select python 3.11.xxx.xxx
+-  ✅ Running local Python source code.
+-  ✅ Building and running Docker locally.
+-  ✅ Deploying Flask App to Cloud Run / App Engine from source.
+-  ✅ Deploying Flask App to App Engine using a standard instance.
+-  ✅ Deploying Flask App to App Engine using a flexible environment (Docker).
+-  ✅ Building, pushing, and deploying Flask App to Cloud Run using Cloud Build.
+
+
+## Quick Start Guide
+
+1. Create a local Python environment at `.venv` using Python 3.11 and the requirements specified in `hello_app/requirements.txt`. 
+    - TIPS: If you use VS Code, press `Cmd+Shift+P`, search `Python: Create Environment...`,  and follow the prompts.
+      - Select Python 3.11.xxx.xxx
       - Check the suggested requirements.txt.
-      - restart you terminal (`Ctrl+Shift+`).
-    - Alternative Option: see `make` command s1 and s2.
-2. Set up your `gcloud cli`, find the install steps [here](https://cloud.google.com/sdk/docs/install)
-3. Activate the correct gcp project with supporting commands like:
+      - Restart you terminal (`Ctrl+Shift+`).
+    - Alternatively, you can use the `make` commands s1 and s2.
+2. Set up your `gcloud cli`, You can find the installation steps [here](https://cloud.google.com/sdk/docs/install)
+3. Activate the appropriate GCP project using commands like:
     - `gcloud config configurations list` 
     - `gcloud cofig configurations activate YOUR_CONFIG_NAME`
-4. Run `make` to find the existing rules.
+4. Run `make` in the terminal to view the existing rules.
 
-    ```bash
-    make
-    ```
     You will get a list of commands to support quick runs.
     | Rule                                 | Description                                        |
     | ------------------------------------ | -------------------------------------------------- |
@@ -45,8 +43,8 @@ The goal to the explore the following topics:
 
 Note
 - Find more details in `makefile`. 
-- The default COMPUTE_DEFAULT_REGION is `australia-southeast1`, modify the code to suit your settings.
-- Remember to enable google Cloud Run and App Engine services for s5-s9.
+- The default COMPUTE_DEFAULT_REGION is `australia-southeast1`, modify the code to suit your gcloud settings.
+- Remember to Enable google Cloud Run and App Engine services for s5-s9; and create service account for the best practice.
 
  ## Example: Local Flask Run
 
@@ -94,3 +92,4 @@ You can copy and paste the following links to test the flask app:
 
 
 ---
+END
