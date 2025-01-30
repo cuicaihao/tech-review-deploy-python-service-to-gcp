@@ -51,7 +51,7 @@ Note
 After setting the  `venv` , start the flask app by the following cmd:
 
 ```bash
-make make s4_local_run 
+make s4_local_run 
 ```
 You should see results like 
 
